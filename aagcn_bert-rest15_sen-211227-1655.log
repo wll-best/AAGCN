@@ -1,0 +1,1121 @@
+loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at C:\Users\NINGMEI\.pytorch_pretrained_bert\26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz not found in cache, downloading to C:\Users\NINGMEI\AppData\Local\Temp\tmpc1u11e7c
+copying C:\Users\NINGMEI\AppData\Local\Temp\tmpc1u11e7c to cache at C:\Users\NINGMEI\.pytorch_pretrained_bert\9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+creating metadata file for C:\Users\NINGMEI\.pytorch_pretrained_bert\9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+removing temp file C:\Users\NINGMEI\AppData\Local\Temp\tmpc1u11e7c
+loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at C:\Users\NINGMEI\.pytorch_pretrained_bert\9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+extracting archive file C:\Users\NINGMEI\.pytorch_pretrained_bert\9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir C:\Users\NINGMEI\AppData\Local\Temp\tmpno202uf7
+Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+cuda memory allocated: 458000896
+> n_trainable_params: 114216489, n_nontrainable_params: 0
+> training arguments:
+>>> model_name: aagcn_bert
+>>> dataset: rest15_sen
+>>> optimizer: <class 'torch.optim.adam.Adam'>
+>>> initializer: <function xavier_uniform_ at 0x00000251030DF400>
+>>> lr: 2e-05
+>>> dropout: 0.1
+>>> l2reg: 0.01
+>>> num_epoch: 20
+>>> batch_size: 16
+>>> log_step: 10
+>>> embed_dim: 300
+>>> hidden_dim: 300
+>>> bert_dim: 768
+>>> pretrained_bert_name: bert-base-uncased
+>>> max_seq_len: 85
+>>> polarities_dim: 3
+>>> hops: 3
+>>> patience: 5
+>>> device: cuda:0
+>>> seed: 1234
+>>> valset_ratio: 0
+>>> model_class: <class 'models.aagcn_bert.AAGCN_BERT'>
+>>> dataset_file: {'train': './dataset/senticnet/15_rest_train.raw.tokenized', 'test': './dataset/senticnet/15_rest_test.raw.tokenized'}
+>>> inputs_cols: ['concat_bert_indices', 'concat_segments_indices', 'entity_graph', 'attribute_graph']
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0
+> val_acc: 0.5085, val_f1: 0.2499
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.5085
+> val_acc: 0.5191, val_f1: 0.2590
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.5191
+> val_acc: 0.5243, val_f1: 0.2577
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.5243
+> val_acc: 0.5296, val_f1: 0.2596
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.5296
+> val_acc: 0.5283, val_f1: 0.2516
+> val_acc: 0.5388, val_f1: 0.2694
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.5388
+> val_acc: 0.5427, val_f1: 0.2779
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.5427
+> val_acc: 0.5414, val_f1: 0.2757
+> val_acc: 0.5309, val_f1: 0.2774
+loss: 0.8929, acc: 0.6250
+> val_acc: 0.5335, val_f1: 0.3057
+> val_acc: 0.5427, val_f1: 0.3311
+> val_acc: 0.5440, val_f1: 0.3301
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.544
+> val_acc: 0.5427, val_f1: 0.3239
+> val_acc: 0.5480, val_f1: 0.3277
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.548
+> val_acc: 0.5401, val_f1: 0.3015
+> val_acc: 0.5269, val_f1: 0.2728
+> val_acc: 0.5283, val_f1: 0.2570
+> val_acc: 0.5309, val_f1: 0.2498
+> val_acc: 0.5309, val_f1: 0.2498
+loss: 0.8034, acc: 0.6625
+> val_acc: 0.5296, val_f1: 0.2510
+> val_acc: 0.5243, val_f1: 0.2492
+> val_acc: 0.5296, val_f1: 0.2651
+> val_acc: 0.5375, val_f1: 0.2787
+> val_acc: 0.5335, val_f1: 0.2872
+> val_acc: 0.5480, val_f1: 0.3173
+> val_acc: 0.5558, val_f1: 0.3341
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.5558
+> val_acc: 0.5598, val_f1: 0.3511
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.5598
+> val_acc: 0.5690, val_f1: 0.3642
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.569
+> val_acc: 0.5664, val_f1: 0.3626
+loss: 0.7510, acc: 0.6979
+> val_acc: 0.5637, val_f1: 0.3544
+> val_acc: 0.5729, val_f1: 0.3510
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.5729
+> val_acc: 0.5756, val_f1: 0.3395
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.5756
+> val_acc: 0.5690, val_f1: 0.3197
+> val_acc: 0.5519, val_f1: 0.2931
+> val_acc: 0.5532, val_f1: 0.2924
+> val_acc: 0.5545, val_f1: 0.2943
+> val_acc: 0.5558, val_f1: 0.2961
+> val_acc: 0.5545, val_f1: 0.2981
+> val_acc: 0.5598, val_f1: 0.3100
+loss: 0.7142, acc: 0.7219
+> val_acc: 0.5624, val_f1: 0.3257
+> val_acc: 0.5769, val_f1: 0.3524
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.5769
+> val_acc: 0.5677, val_f1: 0.3520
+> val_acc: 0.5795, val_f1: 0.3689
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.5795
+> val_acc: 0.5926, val_f1: 0.3864
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.5926
+> val_acc: 0.6058, val_f1: 0.4004
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.6058
+> val_acc: 0.6176, val_f1: 0.4031
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.6176
+> val_acc: 0.6229, val_f1: 0.4006
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.6229
+> val_acc: 0.6255, val_f1: 0.4010
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.6255
+> val_acc: 0.6202, val_f1: 0.3930
+loss: 0.7041, acc: 0.7212
+> val_acc: 0.6071, val_f1: 0.3768
+> val_acc: 0.5874, val_f1: 0.3502
+> val_acc: 0.5677, val_f1: 0.3238
+> val_acc: 0.5637, val_f1: 0.3179
+> val_acc: 0.5650, val_f1: 0.3196
+> val_acc: 0.5637, val_f1: 0.3190
+> val_acc: 0.5756, val_f1: 0.3360
+> val_acc: 0.5926, val_f1: 0.3582
+> val_acc: 0.6058, val_f1: 0.3771
+> val_acc: 0.6137, val_f1: 0.3872
+loss: 0.6748, acc: 0.7333
+> val_acc: 0.6255, val_f1: 0.4017
+> val_acc: 0.6229, val_f1: 0.4006
+> val_acc: 0.6281, val_f1: 0.4080
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.6281
+> val_acc: 0.6255, val_f1: 0.4033
+> val_acc: 0.6202, val_f1: 0.3948
+> val_acc: 0.6124, val_f1: 0.3797
+> val_acc: 0.6018, val_f1: 0.3642
+> val_acc: 0.5992, val_f1: 0.3607
+> val_acc: 0.5992, val_f1: 0.3639
+> val_acc: 0.5979, val_f1: 0.3655
+loss: 0.6555, acc: 0.7411
+> val_acc: 0.5979, val_f1: 0.3662
+> val_acc: 0.6071, val_f1: 0.3755
+> val_acc: 0.6097, val_f1: 0.3816
+> val_acc: 0.6097, val_f1: 0.3822
+> val_acc: 0.6071, val_f1: 0.3794
+> val_acc: 0.6150, val_f1: 0.3861
+> val_acc: 0.6124, val_f1: 0.3840
+> val_acc: 0.6255, val_f1: 0.3968
+> val_acc: 0.6386, val_f1: 0.4082
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.6386
+> val_acc: 0.6439, val_f1: 0.4145
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.6439
+loss: 0.6334, acc: 0.7469
+> val_acc: 0.6767, val_f1: 0.4477
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.6767
+> val_acc: 0.7135, val_f1: 0.4811
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7135
+> val_acc: 0.7175, val_f1: 0.4873
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7175
+> val_acc: 0.7188, val_f1: 0.4880
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7188
+> val_acc: 0.7214, val_f1: 0.4875
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7214
+> val_acc: 0.6899, val_f1: 0.4580
+> val_acc: 0.6702, val_f1: 0.4344
+> val_acc: 0.6505, val_f1: 0.4122
+> val_acc: 0.6426, val_f1: 0.4026
+> val_acc: 0.6268, val_f1: 0.3863
+loss: 0.6309, acc: 0.7444
+> val_acc: 0.6347, val_f1: 0.3955
+> val_acc: 0.6334, val_f1: 0.3932
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 1
+> val_acc: 0.6216, val_f1: 0.3786
+> val_acc: 0.6294, val_f1: 0.3874
+> val_acc: 0.6307, val_f1: 0.3882
+> val_acc: 0.6307, val_f1: 0.3874
+> val_acc: 0.6294, val_f1: 0.3852
+> val_acc: 0.6294, val_f1: 0.3888
+> val_acc: 0.6570, val_f1: 0.4190
+> val_acc: 0.6859, val_f1: 0.4477
+loss: 0.4615, acc: 0.8264
+> val_acc: 0.6938, val_f1: 0.4551
+> val_acc: 0.7070, val_f1: 0.4680
+> val_acc: 0.7135, val_f1: 0.4744
+> val_acc: 0.7109, val_f1: 0.4739
+> val_acc: 0.7109, val_f1: 0.4739
+> val_acc: 0.7122, val_f1: 0.4733
+> val_acc: 0.7135, val_f1: 0.4748
+> val_acc: 0.7070, val_f1: 0.4681
+> val_acc: 0.7188, val_f1: 0.4796
+> val_acc: 0.7227, val_f1: 0.4848
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7227
+loss: 0.4322, acc: 0.8355
+> val_acc: 0.7359, val_f1: 0.4955
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7359
+> val_acc: 0.7398, val_f1: 0.4988
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7398
+> val_acc: 0.7280, val_f1: 0.4897
+> val_acc: 0.7201, val_f1: 0.4824
+> val_acc: 0.7096, val_f1: 0.4740
+> val_acc: 0.7070, val_f1: 0.4836
+> val_acc: 0.7030, val_f1: 0.4786
+> val_acc: 0.7004, val_f1: 0.4758
+> val_acc: 0.6912, val_f1: 0.4674
+> val_acc: 0.6912, val_f1: 0.4782
+loss: 0.4471, acc: 0.8384
+> val_acc: 0.6781, val_f1: 0.4540
+> val_acc: 0.6781, val_f1: 0.4522
+> val_acc: 0.6781, val_f1: 0.4521
+> val_acc: 0.6767, val_f1: 0.4505
+> val_acc: 0.6781, val_f1: 0.4529
+> val_acc: 0.6767, val_f1: 0.4515
+> val_acc: 0.6715, val_f1: 0.4454
+> val_acc: 0.6675, val_f1: 0.4409
+> val_acc: 0.6689, val_f1: 0.4424
+> val_acc: 0.6767, val_f1: 0.4520
+loss: 0.4585, acc: 0.8349
+> val_acc: 0.6873, val_f1: 0.4634
+> val_acc: 0.7135, val_f1: 0.4895
+> val_acc: 0.7306, val_f1: 0.5058
+> val_acc: 0.7306, val_f1: 0.5075
+> val_acc: 0.7385, val_f1: 0.5149
+> val_acc: 0.7359, val_f1: 0.4995
+> val_acc: 0.7359, val_f1: 0.4985
+> val_acc: 0.7306, val_f1: 0.4923
+> val_acc: 0.7201, val_f1: 0.4806
+> val_acc: 0.6978, val_f1: 0.4596
+loss: 0.4562, acc: 0.8342
+> val_acc: 0.6741, val_f1: 0.4342
+> val_acc: 0.6439, val_f1: 0.4012
+> val_acc: 0.6321, val_f1: 0.3874
+> val_acc: 0.6307, val_f1: 0.3866
+> val_acc: 0.6307, val_f1: 0.3866
+> val_acc: 0.6360, val_f1: 0.3926
+> val_acc: 0.6531, val_f1: 0.4123
+> val_acc: 0.6715, val_f1: 0.4316
+> val_acc: 0.6991, val_f1: 0.4619
+> val_acc: 0.7280, val_f1: 0.4878
+loss: 0.4430, acc: 0.8369
+> val_acc: 0.7582, val_f1: 0.5145
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7582
+> val_acc: 0.7608, val_f1: 0.5180
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7608
+> val_acc: 0.7674, val_f1: 0.5230
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7674
+> val_acc: 0.7714, val_f1: 0.5264
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7714
+> val_acc: 0.7753, val_f1: 0.5293
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7753
+> val_acc: 0.7753, val_f1: 0.5295
+> val_acc: 0.7766, val_f1: 0.5305
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7766
+> val_acc: 0.7779, val_f1: 0.5307
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7779
+> val_acc: 0.7648, val_f1: 0.5204
+> val_acc: 0.7543, val_f1: 0.5116
+loss: 0.4295, acc: 0.8406
+> val_acc: 0.7477, val_f1: 0.5050
+> val_acc: 0.7424, val_f1: 0.5001
+> val_acc: 0.7346, val_f1: 0.4928
+> val_acc: 0.7267, val_f1: 0.4856
+> val_acc: 0.7280, val_f1: 0.4864
+> val_acc: 0.7293, val_f1: 0.4878
+> val_acc: 0.7346, val_f1: 0.4923
+> val_acc: 0.7359, val_f1: 0.4937
+> val_acc: 0.7438, val_f1: 0.5003
+> val_acc: 0.7464, val_f1: 0.5030
+loss: 0.4285, acc: 0.8441
+> val_acc: 0.7516, val_f1: 0.5071
+> val_acc: 0.7516, val_f1: 0.5073
+> val_acc: 0.7556, val_f1: 0.5109
+> val_acc: 0.7556, val_f1: 0.5113
+> val_acc: 0.7595, val_f1: 0.5142
+> val_acc: 0.7608, val_f1: 0.5161
+> val_acc: 0.7700, val_f1: 0.5242
+> val_acc: 0.7779, val_f1: 0.5315
+> val_acc: 0.7845, val_f1: 0.5364
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7845
+> val_acc: 0.7858, val_f1: 0.5372
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7858
+loss: 0.4257, acc: 0.8427
+> val_acc: 0.7858, val_f1: 0.5372
+> val_acc: 0.7819, val_f1: 0.5342
+> val_acc: 0.7727, val_f1: 0.5274
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 2
+> val_acc: 0.7740, val_f1: 0.5282
+> val_acc: 0.7700, val_f1: 0.5253
+> val_acc: 0.7727, val_f1: 0.5268
+> val_acc: 0.7674, val_f1: 0.5228
+> val_acc: 0.7648, val_f1: 0.5203
+> val_acc: 0.7622, val_f1: 0.5167
+> val_acc: 0.7582, val_f1: 0.5278
+loss: 0.2568, acc: 0.9141
+> val_acc: 0.7530, val_f1: 0.5231
+> val_acc: 0.7477, val_f1: 0.5178
+> val_acc: 0.7398, val_f1: 0.5111
+> val_acc: 0.7411, val_f1: 0.5122
+> val_acc: 0.7411, val_f1: 0.5122
+> val_acc: 0.7385, val_f1: 0.5100
+> val_acc: 0.7398, val_f1: 0.5111
+> val_acc: 0.7438, val_f1: 0.5147
+> val_acc: 0.7464, val_f1: 0.5171
+> val_acc: 0.7490, val_f1: 0.5197
+loss: 0.2751, acc: 0.8993
+> val_acc: 0.7556, val_f1: 0.5253
+> val_acc: 0.7674, val_f1: 0.5348
+> val_acc: 0.7714, val_f1: 0.5381
+> val_acc: 0.7819, val_f1: 0.5462
+> val_acc: 0.7884, val_f1: 0.5514
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7884
+> val_acc: 0.7911, val_f1: 0.5538
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7911
+> val_acc: 0.7924, val_f1: 0.5550
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7924
+> val_acc: 0.7924, val_f1: 0.5553
+> val_acc: 0.7924, val_f1: 0.5555
+> val_acc: 0.7924, val_f1: 0.5555
+loss: 0.2737, acc: 0.8996
+> val_acc: 0.7950, val_f1: 0.5573
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.795
+> val_acc: 0.7937, val_f1: 0.5563
+> val_acc: 0.7950, val_f1: 0.5570
+> val_acc: 0.7937, val_f1: 0.5557
+> val_acc: 0.7924, val_f1: 0.5547
+> val_acc: 0.7950, val_f1: 0.5567
+> val_acc: 0.7950, val_f1: 0.5568
+> val_acc: 0.7950, val_f1: 0.5567
+> val_acc: 0.7963, val_f1: 0.5577
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7963
+> val_acc: 0.7950, val_f1: 0.5568
+loss: 0.2726, acc: 0.8997
+> val_acc: 0.7950, val_f1: 0.5569
+> val_acc: 0.7976, val_f1: 0.5588
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.7976
+> val_acc: 0.8003, val_f1: 0.5606
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.8003
+> val_acc: 0.7963, val_f1: 0.5581
+> val_acc: 0.7963, val_f1: 0.5580
+> val_acc: 0.7911, val_f1: 0.5538
+> val_acc: 0.7832, val_f1: 0.5477
+> val_acc: 0.7753, val_f1: 0.5413
+> val_acc: 0.7700, val_f1: 0.5371
+> val_acc: 0.7674, val_f1: 0.5349
+loss: 0.2754, acc: 0.8997
+> val_acc: 0.7674, val_f1: 0.5345
+> val_acc: 0.7674, val_f1: 0.5345
+> val_acc: 0.7648, val_f1: 0.5326
+> val_acc: 0.7687, val_f1: 0.5355
+> val_acc: 0.7687, val_f1: 0.5355
+> val_acc: 0.7674, val_f1: 0.5346
+> val_acc: 0.7674, val_f1: 0.5345
+> val_acc: 0.7687, val_f1: 0.5359
+> val_acc: 0.7727, val_f1: 0.5392
+> val_acc: 0.7661, val_f1: 0.5341
+loss: 0.2745, acc: 0.8998
+> val_acc: 0.7622, val_f1: 0.5306
+> val_acc: 0.7595, val_f1: 0.5282
+> val_acc: 0.7648, val_f1: 0.5326
+> val_acc: 0.7648, val_f1: 0.5327
+> val_acc: 0.7661, val_f1: 0.5332
+> val_acc: 0.7635, val_f1: 0.5316
+> val_acc: 0.7635, val_f1: 0.5314
+> val_acc: 0.7608, val_f1: 0.5295
+> val_acc: 0.7595, val_f1: 0.5146
+> val_acc: 0.7714, val_f1: 0.5237
+loss: 0.2866, acc: 0.8925
+> val_acc: 0.7806, val_f1: 0.5310
+> val_acc: 0.7845, val_f1: 0.5347
+> val_acc: 0.7950, val_f1: 0.5575
+> val_acc: 0.7963, val_f1: 0.5584
+> val_acc: 0.7989, val_f1: 0.5604
+> val_acc: 0.7989, val_f1: 0.5604
+> val_acc: 0.7937, val_f1: 0.5566
+> val_acc: 0.7937, val_f1: 0.5564
+> val_acc: 0.7884, val_f1: 0.5523
+> val_acc: 0.7884, val_f1: 0.5522
+loss: 0.2860, acc: 0.8958
+> val_acc: 0.7792, val_f1: 0.5450
+> val_acc: 0.7779, val_f1: 0.5569
+> val_acc: 0.7674, val_f1: 0.5484
+> val_acc: 0.7543, val_f1: 0.5375
+> val_acc: 0.7438, val_f1: 0.5284
+> val_acc: 0.7411, val_f1: 0.5257
+> val_acc: 0.7385, val_f1: 0.5346
+> val_acc: 0.7385, val_f1: 0.5349
+> val_acc: 0.7385, val_f1: 0.5349
+> val_acc: 0.7359, val_f1: 0.5333
+loss: 0.2902, acc: 0.8949
+> val_acc: 0.7385, val_f1: 0.5458
+> val_acc: 0.7477, val_f1: 0.5430
+> val_acc: 0.7648, val_f1: 0.5777
+> val_acc: 0.7806, val_f1: 0.5934
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 3
+> val_acc: 0.7871, val_f1: 0.5893
+> val_acc: 0.7950, val_f1: 0.5826
+> val_acc: 0.7924, val_f1: 0.5808
+> val_acc: 0.7937, val_f1: 0.5833
+> val_acc: 0.7963, val_f1: 0.5859
+> val_acc: 0.7911, val_f1: 0.5821
+loss: 0.1921, acc: 0.9375
+> val_acc: 0.7858, val_f1: 0.5779
+> val_acc: 0.7845, val_f1: 0.5774
+> val_acc: 0.7806, val_f1: 0.5614
+> val_acc: 0.7687, val_f1: 0.5515
+> val_acc: 0.7661, val_f1: 0.5351
+> val_acc: 0.7608, val_f1: 0.5160
+> val_acc: 0.7595, val_f1: 0.5146
+> val_acc: 0.7543, val_f1: 0.5106
+> val_acc: 0.7530, val_f1: 0.5090
+> val_acc: 0.7516, val_f1: 0.5080
+loss: 0.1700, acc: 0.9301
+> val_acc: 0.7503, val_f1: 0.5073
+> val_acc: 0.7464, val_f1: 0.5049
+> val_acc: 0.7451, val_f1: 0.5039
+> val_acc: 0.7530, val_f1: 0.5104
+> val_acc: 0.7556, val_f1: 0.5132
+> val_acc: 0.7661, val_f1: 0.5219
+> val_acc: 0.7674, val_f1: 0.5374
+> val_acc: 0.7727, val_f1: 0.5416
+> val_acc: 0.7806, val_f1: 0.5613
+> val_acc: 0.7792, val_f1: 0.5470
+loss: 0.1900, acc: 0.9282
+> val_acc: 0.7832, val_f1: 0.5499
+> val_acc: 0.7819, val_f1: 0.5486
+> val_acc: 0.7753, val_f1: 0.5433
+> val_acc: 0.7766, val_f1: 0.5290
+> val_acc: 0.7648, val_f1: 0.5199
+> val_acc: 0.7622, val_f1: 0.5173
+> val_acc: 0.7582, val_f1: 0.5274
+> val_acc: 0.7503, val_f1: 0.5209
+> val_acc: 0.7359, val_f1: 0.5077
+> val_acc: 0.7214, val_f1: 0.4940
+loss: 0.1986, acc: 0.9257
+> val_acc: 0.7070, val_f1: 0.4807
+> val_acc: 0.7057, val_f1: 0.4785
+> val_acc: 0.7122, val_f1: 0.4841
+> val_acc: 0.7214, val_f1: 0.4935
+> val_acc: 0.7385, val_f1: 0.5097
+> val_acc: 0.7451, val_f1: 0.5164
+> val_acc: 0.7635, val_f1: 0.5172
+> val_acc: 0.7779, val_f1: 0.5288
+> val_acc: 0.7806, val_f1: 0.5310
+> val_acc: 0.7819, val_f1: 0.5322
+loss: 0.1958, acc: 0.9295
+> val_acc: 0.7884, val_f1: 0.5373
+> val_acc: 0.7898, val_f1: 0.5385
+> val_acc: 0.7950, val_f1: 0.5426
+> val_acc: 0.7937, val_f1: 0.5417
+> val_acc: 0.7924, val_f1: 0.5408
+> val_acc: 0.7924, val_f1: 0.5408
+> val_acc: 0.7924, val_f1: 0.5408
+> val_acc: 0.7911, val_f1: 0.5401
+> val_acc: 0.7924, val_f1: 0.5411
+> val_acc: 0.7911, val_f1: 0.5401
+loss: 0.1954, acc: 0.9287
+> val_acc: 0.7898, val_f1: 0.5392
+> val_acc: 0.7898, val_f1: 0.5388
+> val_acc: 0.7871, val_f1: 0.5369
+> val_acc: 0.7819, val_f1: 0.5479
+> val_acc: 0.7792, val_f1: 0.5460
+> val_acc: 0.7779, val_f1: 0.5451
+> val_acc: 0.7806, val_f1: 0.5606
+> val_acc: 0.7766, val_f1: 0.5823
+> val_acc: 0.7753, val_f1: 0.5880
+> val_acc: 0.7753, val_f1: 0.6145
+loss: 0.2199, acc: 0.9207
+> val_acc: 0.7740, val_f1: 0.6097
+> val_acc: 0.7753, val_f1: 0.6150
+> val_acc: 0.7727, val_f1: 0.6122
+> val_acc: 0.7714, val_f1: 0.6115
+> val_acc: 0.7648, val_f1: 0.6062
+> val_acc: 0.7661, val_f1: 0.6003
+> val_acc: 0.7687, val_f1: 0.6033
+> val_acc: 0.7661, val_f1: 0.6035
+> val_acc: 0.7595, val_f1: 0.5835
+> val_acc: 0.7556, val_f1: 0.5698
+loss: 0.2235, acc: 0.9188
+> val_acc: 0.7556, val_f1: 0.5705
+> val_acc: 0.7569, val_f1: 0.5489
+> val_acc: 0.7582, val_f1: 0.5508
+> val_acc: 0.7608, val_f1: 0.5533
+> val_acc: 0.7674, val_f1: 0.5477
+> val_acc: 0.7753, val_f1: 0.5413
+> val_acc: 0.7832, val_f1: 0.5612
+> val_acc: 0.7832, val_f1: 0.5484
+> val_acc: 0.7924, val_f1: 0.5553
+> val_acc: 0.7819, val_f1: 0.5481
+loss: 0.2216, acc: 0.9174
+> val_acc: 0.7832, val_f1: 0.5494
+> val_acc: 0.7766, val_f1: 0.5447
+> val_acc: 0.7806, val_f1: 0.5476
+> val_acc: 0.7819, val_f1: 0.5484
+> val_acc: 0.7871, val_f1: 0.5524
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 4
+> val_acc: 0.7871, val_f1: 0.5524
+> val_acc: 0.7884, val_f1: 0.5535
+> val_acc: 0.7911, val_f1: 0.5552
+> val_acc: 0.7950, val_f1: 0.5720
+> val_acc: 0.7911, val_f1: 0.5695
+loss: 0.1200, acc: 0.9479
+> val_acc: 0.7845, val_f1: 0.5647
+> val_acc: 0.7832, val_f1: 0.5634
+> val_acc: 0.7845, val_f1: 0.5639
+> val_acc: 0.7898, val_f1: 0.5670
+> val_acc: 0.7845, val_f1: 0.5762
+> val_acc: 0.7753, val_f1: 0.5420
+> val_acc: 0.7700, val_f1: 0.5378
+> val_acc: 0.7674, val_f1: 0.5357
+> val_acc: 0.7648, val_f1: 0.5192
+> val_acc: 0.7674, val_f1: 0.5211
+loss: 0.1430, acc: 0.9453
+> val_acc: 0.7700, val_f1: 0.5233
+> val_acc: 0.7714, val_f1: 0.5240
+> val_acc: 0.7766, val_f1: 0.5277
+> val_acc: 0.7779, val_f1: 0.5285
+> val_acc: 0.7674, val_f1: 0.5205
+> val_acc: 0.7648, val_f1: 0.5185
+> val_acc: 0.7635, val_f1: 0.5170
+> val_acc: 0.7635, val_f1: 0.5174
+> val_acc: 0.7687, val_f1: 0.5216
+> val_acc: 0.7740, val_f1: 0.5521
+loss: 0.1620, acc: 0.9351
+> val_acc: 0.7753, val_f1: 0.5649
+> val_acc: 0.7727, val_f1: 0.5623
+> val_acc: 0.7740, val_f1: 0.5636
+> val_acc: 0.7766, val_f1: 0.5653
+> val_acc: 0.7845, val_f1: 0.5810
+> val_acc: 0.7858, val_f1: 0.5915
+> val_acc: 0.7924, val_f1: 0.6051
+> val_acc: 0.7950, val_f1: 0.6073
+> val_acc: 0.7989, val_f1: 0.6114
+> val_acc: 0.7937, val_f1: 0.6082
+loss: 0.1559, acc: 0.9427
+> val_acc: 0.7898, val_f1: 0.6071
+> val_acc: 0.7937, val_f1: 0.6102
+> val_acc: 0.7976, val_f1: 0.6130
+> val_acc: 0.7950, val_f1: 0.6105
+> val_acc: 0.7989, val_f1: 0.6157
+> val_acc: 0.8003, val_f1: 0.6181
+> val_acc: 0.8003, val_f1: 0.6187
+> val_acc: 0.8016, val_f1: 0.6202
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.8016
+> val_acc: 0.8016, val_f1: 0.6211
+> val_acc: 0.7950, val_f1: 0.6055
+loss: 0.1537, acc: 0.9429
+> val_acc: 0.7989, val_f1: 0.5990
+> val_acc: 0.7963, val_f1: 0.5965
+> val_acc: 0.7963, val_f1: 0.5970
+> val_acc: 0.7911, val_f1: 0.5928
+> val_acc: 0.7911, val_f1: 0.5927
+> val_acc: 0.7845, val_f1: 0.5875
+> val_acc: 0.7806, val_f1: 0.5843
+> val_acc: 0.7819, val_f1: 0.5845
+> val_acc: 0.7806, val_f1: 0.5833
+> val_acc: 0.7832, val_f1: 0.5854
+loss: 0.1566, acc: 0.9408
+> val_acc: 0.7871, val_f1: 0.5885
+> val_acc: 0.7950, val_f1: 0.5947
+> val_acc: 0.8003, val_f1: 0.6094
+> val_acc: 0.8068, val_f1: 0.6252
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.8068
+> val_acc: 0.8108, val_f1: 0.6282
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.8108
+> val_acc: 0.8187, val_f1: 0.6448
+>> saved: state_dict/aagcn_bert_rest15_sen_val_acc_0.8187
+> val_acc: 0.8173, val_f1: 0.6441
+> val_acc: 0.8121, val_f1: 0.6300
+> val_acc: 0.8121, val_f1: 0.6300
+> val_acc: 0.8121, val_f1: 0.6299
+loss: 0.1586, acc: 0.9394
+> val_acc: 0.8121, val_f1: 0.6298
+> val_acc: 0.8108, val_f1: 0.6051
+> val_acc: 0.8095, val_f1: 0.6039
+> val_acc: 0.8081, val_f1: 0.6020
+> val_acc: 0.8095, val_f1: 0.6021
+> val_acc: 0.8068, val_f1: 0.5997
+> val_acc: 0.8055, val_f1: 0.5882
+> val_acc: 0.8068, val_f1: 0.5895
+> val_acc: 0.8081, val_f1: 0.5797
+> val_acc: 0.8068, val_f1: 0.5791
+loss: 0.1712, acc: 0.9350
+> val_acc: 0.8095, val_f1: 0.5812
+> val_acc: 0.8160, val_f1: 0.5860
+> val_acc: 0.8173, val_f1: 0.5993
+> val_acc: 0.8173, val_f1: 0.5999
+> val_acc: 0.8173, val_f1: 0.6004
+> val_acc: 0.8160, val_f1: 0.5872
+> val_acc: 0.8147, val_f1: 0.5727
+> val_acc: 0.8134, val_f1: 0.5717
+> val_acc: 0.8187, val_f1: 0.5751
+> val_acc: 0.8160, val_f1: 0.5731
+loss: 0.1721, acc: 0.9331
+> val_acc: 0.8108, val_f1: 0.5691
+> val_acc: 0.8055, val_f1: 0.5651
+> val_acc: 0.8029, val_f1: 0.5631
+> val_acc: 0.7976, val_f1: 0.5592
+> val_acc: 0.7976, val_f1: 0.5591
+> val_acc: 0.7937, val_f1: 0.5566
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 5
+> val_acc: 0.7963, val_f1: 0.5586
+> val_acc: 0.7976, val_f1: 0.5600
+> val_acc: 0.8003, val_f1: 0.5620
+> val_acc: 0.7963, val_f1: 0.5593
+loss: 0.0570, acc: 0.9875
+> val_acc: 0.7963, val_f1: 0.5595
+> val_acc: 0.7924, val_f1: 0.5565
+> val_acc: 0.7924, val_f1: 0.5565
+> val_acc: 0.7924, val_f1: 0.5563
+> val_acc: 0.7924, val_f1: 0.5561
+> val_acc: 0.7871, val_f1: 0.5380
+> val_acc: 0.7858, val_f1: 0.5366
+> val_acc: 0.7779, val_f1: 0.5307
+> val_acc: 0.7753, val_f1: 0.5282
+> val_acc: 0.7661, val_f1: 0.5213
+loss: 0.0640, acc: 0.9750
+> val_acc: 0.7661, val_f1: 0.5207
+> val_acc: 0.7674, val_f1: 0.5216
+> val_acc: 0.7661, val_f1: 0.5205
+> val_acc: 0.7622, val_f1: 0.5175
+> val_acc: 0.7622, val_f1: 0.5175
+> val_acc: 0.7635, val_f1: 0.5184
+> val_acc: 0.7622, val_f1: 0.5171
+> val_acc: 0.7635, val_f1: 0.5464
+> val_acc: 0.7648, val_f1: 0.5472
+> val_acc: 0.7661, val_f1: 0.5479
+loss: 0.0861, acc: 0.9700
+> val_acc: 0.7661, val_f1: 0.5477
+> val_acc: 0.7648, val_f1: 0.5461
+> val_acc: 0.7674, val_f1: 0.5479
+> val_acc: 0.7700, val_f1: 0.5497
+> val_acc: 0.7687, val_f1: 0.5488
+> val_acc: 0.7674, val_f1: 0.5481
+> val_acc: 0.7714, val_f1: 0.5630
+> val_acc: 0.7753, val_f1: 0.5756
+> val_acc: 0.7792, val_f1: 0.5786
+> val_acc: 0.7832, val_f1: 0.5822
+loss: 0.0834, acc: 0.9714
+> val_acc: 0.7898, val_f1: 0.5871
+> val_acc: 0.7871, val_f1: 0.5850
+> val_acc: 0.7871, val_f1: 0.5848
+> val_acc: 0.7884, val_f1: 0.5866
+> val_acc: 0.7911, val_f1: 0.5778
+> val_acc: 0.7898, val_f1: 0.5772
+> val_acc: 0.7924, val_f1: 0.5792
+> val_acc: 0.7924, val_f1: 0.5792
+> val_acc: 0.7898, val_f1: 0.5775
+> val_acc: 0.7858, val_f1: 0.5859
+loss: 0.1003, acc: 0.9597
+> val_acc: 0.7871, val_f1: 0.5870
+> val_acc: 0.7845, val_f1: 0.5855
+> val_acc: 0.7871, val_f1: 0.5979
+> val_acc: 0.7924, val_f1: 0.5997
+> val_acc: 0.7924, val_f1: 0.5989
+> val_acc: 0.7924, val_f1: 0.6070
+> val_acc: 0.7937, val_f1: 0.6083
+> val_acc: 0.7963, val_f1: 0.6098
+> val_acc: 0.7963, val_f1: 0.6184
+> val_acc: 0.7963, val_f1: 0.6184
+loss: 0.1121, acc: 0.9500
+> val_acc: 0.7989, val_f1: 0.6226
+> val_acc: 0.7976, val_f1: 0.6042
+> val_acc: 0.7924, val_f1: 0.5908
+> val_acc: 0.7832, val_f1: 0.5830
+> val_acc: 0.7845, val_f1: 0.5848
+> val_acc: 0.7779, val_f1: 0.5686
+> val_acc: 0.7700, val_f1: 0.5621
+> val_acc: 0.7648, val_f1: 0.5587
+> val_acc: 0.7661, val_f1: 0.5469
+> val_acc: 0.7819, val_f1: 0.5606
+loss: 0.1216, acc: 0.9471
+> val_acc: 0.7845, val_f1: 0.5630
+> val_acc: 0.7858, val_f1: 0.5646
+> val_acc: 0.7937, val_f1: 0.5412
+> val_acc: 0.7924, val_f1: 0.5558
+> val_acc: 0.7858, val_f1: 0.5516
+> val_acc: 0.7858, val_f1: 0.5518
+> val_acc: 0.7753, val_f1: 0.5593
+> val_acc: 0.7792, val_f1: 0.5620
+> val_acc: 0.7792, val_f1: 0.5619
+> val_acc: 0.7792, val_f1: 0.5474
+loss: 0.1344, acc: 0.9442
+> val_acc: 0.7806, val_f1: 0.5334
+> val_acc: 0.7727, val_f1: 0.5273
+> val_acc: 0.7727, val_f1: 0.5273
+> val_acc: 0.7700, val_f1: 0.5251
+> val_acc: 0.7700, val_f1: 0.5248
+> val_acc: 0.7687, val_f1: 0.5231
+> val_acc: 0.7635, val_f1: 0.5191
+> val_acc: 0.7648, val_f1: 0.5187
+> val_acc: 0.7608, val_f1: 0.5151
+> val_acc: 0.7569, val_f1: 0.5263
+loss: 0.1479, acc: 0.9375
+> val_acc: 0.7569, val_f1: 0.5395
+> val_acc: 0.7687, val_f1: 0.5490
+> val_acc: 0.7871, val_f1: 0.5504
+> val_acc: 0.7963, val_f1: 0.5722
+> val_acc: 0.7976, val_f1: 0.5747
+> val_acc: 0.7845, val_f1: 0.5518
+> val_acc: 0.7832, val_f1: 0.5511
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 6
+> val_acc: 0.7792, val_f1: 0.5483
+> val_acc: 0.7635, val_f1: 0.5221
+> val_acc: 0.7622, val_f1: 0.5198
+loss: 0.3525, acc: 0.8594
+> val_acc: 0.7477, val_f1: 0.5080
+> val_acc: 0.7398, val_f1: 0.5007
+> val_acc: 0.7424, val_f1: 0.5028
+> val_acc: 0.7372, val_f1: 0.4998
+> val_acc: 0.7438, val_f1: 0.5190
+> val_acc: 0.7530, val_f1: 0.5507
+> val_acc: 0.7648, val_f1: 0.5487
+> val_acc: 0.7700, val_f1: 0.5530
+> val_acc: 0.7648, val_f1: 0.5591
+> val_acc: 0.7792, val_f1: 0.5884
+loss: 0.3461, acc: 0.8438
+> val_acc: 0.7937, val_f1: 0.6124
+> val_acc: 0.7884, val_f1: 0.6294
+> val_acc: 0.7819, val_f1: 0.6158
+> val_acc: 0.7753, val_f1: 0.5788
+> val_acc: 0.7569, val_f1: 0.5405
+> val_acc: 0.7227, val_f1: 0.5105
+> val_acc: 0.6754, val_f1: 0.4430
+> val_acc: 0.6505, val_f1: 0.4206
+> val_acc: 0.6439, val_f1: 0.4138
+> val_acc: 0.6781, val_f1: 0.4617
+loss: 0.3211, acc: 0.8594
+> val_acc: 0.6689, val_f1: 0.4845
+> val_acc: 0.6807, val_f1: 0.4953
+> val_acc: 0.5440, val_f1: 0.4139
+> val_acc: 0.4967, val_f1: 0.3638
+> val_acc: 0.4901, val_f1: 0.2976
+> val_acc: 0.5072, val_f1: 0.2639
+> val_acc: 0.5151, val_f1: 0.2382
+> val_acc: 0.5177, val_f1: 0.2297
+> val_acc: 0.5322, val_f1: 0.2428
+> val_acc: 0.5256, val_f1: 0.2316
+loss: 0.4243, acc: 0.8290
+> val_acc: 0.5269, val_f1: 0.2320
+> val_acc: 0.5269, val_f1: 0.2320
+> val_acc: 0.5256, val_f1: 0.2297
+> val_acc: 0.5256, val_f1: 0.2297
+> val_acc: 0.5256, val_f1: 0.2297
+> val_acc: 0.5256, val_f1: 0.2297
+> val_acc: 0.5256, val_f1: 0.2297
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+loss: 0.5142, acc: 0.7926
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+loss: 0.5544, acc: 0.7905
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5269, val_f1: 0.2320
+> val_acc: 0.5269, val_f1: 0.2320
+> val_acc: 0.5269, val_f1: 0.2320
+> val_acc: 0.5269, val_f1: 0.2320
+> val_acc: 0.5296, val_f1: 0.2365
+> val_acc: 0.5335, val_f1: 0.2432
+> val_acc: 0.5361, val_f1: 0.2476
+> val_acc: 0.5361, val_f1: 0.2476
+> val_acc: 0.5401, val_f1: 0.2541
+loss: 0.5748, acc: 0.7852
+> val_acc: 0.5335, val_f1: 0.2520
+> val_acc: 0.5348, val_f1: 0.2543
+> val_acc: 0.5348, val_f1: 0.2543
+> val_acc: 0.5348, val_f1: 0.2543
+> val_acc: 0.5388, val_f1: 0.2605
+> val_acc: 0.5427, val_f1: 0.2619
+> val_acc: 0.5440, val_f1: 0.2624
+> val_acc: 0.5414, val_f1: 0.2598
+> val_acc: 0.5414, val_f1: 0.2597
+> val_acc: 0.5388, val_f1: 0.2555
+loss: 0.5912, acc: 0.7770
+> val_acc: 0.5375, val_f1: 0.2567
+> val_acc: 0.5348, val_f1: 0.2558
+> val_acc: 0.5361, val_f1: 0.2579
+> val_acc: 0.5348, val_f1: 0.2574
+> val_acc: 0.5348, val_f1: 0.2574
+> val_acc: 0.5375, val_f1: 0.2567
+> val_acc: 0.5375, val_f1: 0.2534
+> val_acc: 0.5401, val_f1: 0.2542
+> val_acc: 0.5401, val_f1: 0.2542
+> val_acc: 0.5388, val_f1: 0.2521
+loss: 0.6032, acc: 0.7731
+> val_acc: 0.5322, val_f1: 0.2411
+> val_acc: 0.5322, val_f1: 0.2411
+> val_acc: 0.5322, val_f1: 0.2411
+> val_acc: 0.5322, val_f1: 0.2411
+> val_acc: 0.5322, val_f1: 0.2411
+> val_acc: 0.5322, val_f1: 0.2411
+> val_acc: 0.5322, val_f1: 0.2411
+> val_acc: 0.5322, val_f1: 0.2411
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 7
+> val_acc: 0.5322, val_f1: 0.2411
+> val_acc: 0.5322, val_f1: 0.2411
+loss: 0.7636, acc: 0.6875
+> val_acc: 0.5322, val_f1: 0.2411
+> val_acc: 0.5322, val_f1: 0.2411
+> val_acc: 0.5322, val_f1: 0.2411
+> val_acc: 0.5361, val_f1: 0.2477
+> val_acc: 0.5361, val_f1: 0.2477
+> val_acc: 0.5361, val_f1: 0.2477
+> val_acc: 0.5361, val_f1: 0.2477
+> val_acc: 0.5361, val_f1: 0.2477
+> val_acc: 0.5361, val_f1: 0.2477
+> val_acc: 0.5361, val_f1: 0.2477
+loss: 0.6672, acc: 0.7356
+> val_acc: 0.5361, val_f1: 0.2477
+> val_acc: 0.5361, val_f1: 0.2477
+> val_acc: 0.5361, val_f1: 0.2477
+> val_acc: 0.5361, val_f1: 0.2477
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+loss: 0.6516, acc: 0.7582
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+loss: 0.6694, acc: 0.7443
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+loss: 0.6807, acc: 0.7442
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+loss: 0.6910, acc: 0.7394
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+loss: 0.6999, acc: 0.7351
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+> val_acc: 0.5375, val_f1: 0.2499
+loss: 0.6956, acc: 0.7346
+> val_acc: 0.5388, val_f1: 0.2521
+> val_acc: 0.5375, val_f1: 0.2534
+> val_acc: 0.5348, val_f1: 0.2506
+> val_acc: 0.5348, val_f1: 0.2523
+> val_acc: 0.5309, val_f1: 0.2528
+> val_acc: 0.5296, val_f1: 0.2555
+> val_acc: 0.5296, val_f1: 0.2678
+> val_acc: 0.5427, val_f1: 0.2841
+> val_acc: 0.5296, val_f1: 0.2649
+> val_acc: 0.5506, val_f1: 0.2831
+loss: 0.6786, acc: 0.7410
+> val_acc: 0.5716, val_f1: 0.3165
+> val_acc: 0.5703, val_f1: 0.3147
+> val_acc: 0.5874, val_f1: 0.3399
+> val_acc: 0.6110, val_f1: 0.3779
+> val_acc: 0.6294, val_f1: 0.4023
+> val_acc: 0.6767, val_f1: 0.4485
+> val_acc: 0.7319, val_f1: 0.4970
+> val_acc: 0.7372, val_f1: 0.5026
+> val_acc: 0.7556, val_f1: 0.5151
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 8
+> val_acc: 0.7332, val_f1: 0.4971
+loss: 0.4297, acc: 0.7500
+> val_acc: 0.6281, val_f1: 0.4054
+> val_acc: 0.5585, val_f1: 0.3239
+> val_acc: 0.5388, val_f1: 0.2783
+> val_acc: 0.5388, val_f1: 0.2637
+> val_acc: 0.5296, val_f1: 0.2557
+> val_acc: 0.5335, val_f1: 0.2520
+> val_acc: 0.5322, val_f1: 0.2429
+> val_acc: 0.5388, val_f1: 0.2521
+> val_acc: 0.5348, val_f1: 0.2473
+> val_acc: 0.5361, val_f1: 0.2477
+loss: 0.5950, acc: 0.7604
+> val_acc: 0.5361, val_f1: 0.2476
+> val_acc: 0.5348, val_f1: 0.2454
+> val_acc: 0.5335, val_f1: 0.2432
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6102, acc: 0.7614
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6121, acc: 0.7695
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6163, acc: 0.7708
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6425, acc: 0.7548
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6643, acc: 0.7450
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6685, acc: 0.7431
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6618, acc: 0.7500
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 9
+loss: 0.5783, acc: 0.8125
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6614, acc: 0.7727
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6763, acc: 0.7530
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6927, acc: 0.7399
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6768, acc: 0.7439
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6780, acc: 0.7463
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6745, acc: 0.7469
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+> val_acc: 0.5283, val_f1: 0.2342
+loss: 0.6749, acc: 0.7465
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6796, acc: 0.7423
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+> val_acc: 0.5322, val_f1: 0.2410
+loss: 0.6822, acc: 0.7416
+> val_acc: 0.5322, val_f1: 0.2410
+>> test_acc: 0.8187, test_f1: 0.6448
